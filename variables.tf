@@ -42,11 +42,3 @@ variable "environment" {
   description = "value passed to Environment tag and used in name of Vault auth backend later"
   default = "gke-dev"
 }
-
-variable "vault_user" {
-  description = "Vault userid: determines location of secrets and affects path of k8s auth backend"
-}
-
-variable "vault_addr" {
-  description = "Address of Vault server including port"
-}

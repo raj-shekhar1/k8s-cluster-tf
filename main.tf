@@ -2,10 +2,6 @@ terraform {
   required_version = ">= 0.11.11"
 }
 
-#provider "vault" {
-#  address = "${var.vault_addr}"
-#}
-
 provider "google" {
   credentials = "${file("file.json")}"
   project     = "${var.gcp_project}"
@@ -13,7 +9,7 @@ provider "google" {
 }
 
 resource "google_container_cluster" "k8sexample" {
-  name               = "${var.vault_user}-k8s-cluster"
+  name               = "tf-k8s-cluster"
   description        = "example k8s cluster"
   zone               = "${var.gcp_zone}"
   initial_node_count = "${var.initial_node_count}"
