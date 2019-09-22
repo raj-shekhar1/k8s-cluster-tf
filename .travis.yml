@@ -9,11 +9,11 @@ language: generic
  # - mv /tmp/terraform ~/bin
  # - export PATH="~/bin:$PATH"
 
-script: terraform-linux plan
+script: cd k8s-cluster-tf/terraform-linux plan
 
 deploy:
 - provider: script
   skip_cleanup: true
-  script: terraform-linux apply 
+  script: cd k8s-cluster-tf/terraform-linux apply 
   on:
     branch: master
