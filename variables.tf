@@ -10,7 +10,7 @@ variable "gcp_zone" {
 
 variable "gcp_project" {
   description = "GCP project name"
-  default = "storied-imprint-228613"
+  default = "storied-imprint-xxxx"
 }
 
 variable "initial_node_count" {
