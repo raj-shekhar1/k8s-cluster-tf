@@ -1,1 +1,1 @@
-Deploy Kubernetes using terraform and Travis CI on Google Kubernetes Engine
+Deploy Kubernetes cluster using terraform and Travis CI on Google Kubernetes Engine
